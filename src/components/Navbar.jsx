@@ -16,6 +16,12 @@ const Navbar = () => {
       <li><a>Pricing</a></li>
       <li><a>Testimonials</a></li>
       <li><a>FAQ</a></li>
+     <div className="mt-2 indicator ml-2">
+         <i class="fa-solid fa-cart-shopping"></i>
+          <span className="hidden badge badge-sm indicator-item">8</span>
+        </div>
+    <a className="btn border-none bg-white hover:bg-white shadow-none mr-auto">Login</a>
+    <a className="btn bg-gradient text-white rounded-4xl mr-auto">Get Started</a>
       </ul>
     </div>
     <a className="text-xl text-gradient">DigiTools</a>
@@ -29,7 +35,7 @@ const Navbar = () => {
       <li><a>FAQ</a></li>
     </ul>
   </div>
-  <div className="navbar-end ">
+  <div className="navbar-end hidden md:flex">
      <div className="indicator mr-1.5">
          <i class="fa-solid fa-cart-shopping"></i>
           <span className="hidden badge badge-sm indicator-item">8</span>
