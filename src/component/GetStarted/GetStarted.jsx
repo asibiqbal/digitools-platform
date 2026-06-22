@@ -61,7 +61,7 @@ export default function GetStarted() {
                 {step.title}
               </h3>
 
-              <p className="text-[#627382] text-sm leading-relaxed max-w-[240px]">
+              <p className="text-[#627382] text-sm leading-relaxed max-w-60">
                 {step.description}
               </p>
 
