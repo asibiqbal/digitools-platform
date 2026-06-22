@@ -50,7 +50,7 @@ const Banner = () => {
 
       <div className="flex justify-center lg:justify-end w-full animate-right">
         <img 
-          src="/src/assets/banner.png" 
+          src="/banner.png"
           alt="Modern Application Development Interface Illustration" 
           className="w-125 h-147.5 object-cover rounded-xl"
         />
