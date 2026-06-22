@@ -25,11 +25,23 @@ export default function App() {
     }
   };
 
+  const handleClearCart = () => {
+    setCartItems([]);
+    toast.success("Proceeding to checkout! Your order has been placed.", {
+      position: "top-right",
+      autoClose: 3000,
+    });
+  };
+
   return (
     <div>
-      <Navbar cartCount={cartItems.length} />   
-      <State />  
-      <Product cartItems={cartItems} onToggleCart={handleToggleCart} />
+      <Navbar cartCount={cartItems.length} />
+      <State />
+      <Product 
+        cartItems={cartItems} 
+        onToggleCart={handleToggleCart} 
+        onClearCart={handleClearCart}
+      />
       <ToastContainer />
     </div>
   );
