@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import GetStarted from './component/GetStarted/GetStarted';
 import Navbar from './component/Navbar/Navbar';
 import Product from './component/Product/Product';
 import State from './component/State/State';
@@ -42,6 +43,7 @@ export default function App() {
         onToggleCart={handleToggleCart} 
         onClearCart={handleClearCart}
       />
+      <GetStarted></GetStarted>
       <ToastContainer />
     </div>
   );
