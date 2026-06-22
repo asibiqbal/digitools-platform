@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create ATS-optimized professional resumes in seconds using advanced AI models.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "DesignAsset Pro",
+    "description": "Access thousands of high-quality UI elements, icons, and premium illustrations.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Vector assets", "Commercial license", "Weekly updates"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "SEO Optimizer",
+    "description": "Rank higher on search engines with automated keyword and competitor tracking.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Keyword tracker", "Competitor analysis", "Weekly reports"],
+    "icon": "🚀"
+  },
+  {
+    "id": 4,
+    "name": "DevSnippet Studio",
+    "description": "A cloud-connected library to manage and sync code components seamlessly.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["VS Code Extension", "Team Sharing", "Unlimited snippets"],
+    "icon": "💻"
+  },
+  {
+    "id": 5,
+    "name": "CopyGenius AI",
+    "description": "Generate high-converting marketing copy for emails, ads, and landing pages.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["30+ tones", "Plagiarism checker", "API Access"],
+    "icon": "✍️"
+  },
+  {
+    "id": 6,
+    "name": "TaskFlow Enterprise",
+    "description": "Organize schedules, assign jobs, and coordinate team production workflows easily.",
+    "price": 299,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Unlimited projects", "Time tracking", "Custom branding"],
+    "icon": "⚙️"
+  },
+  {
+    "id": 7,
+    "name": "MockupGen",
+    "description": "Generate photorealistic product mockup images in high resolution instantly.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["4K resolution", "Drag & Drop", "No watermark"],
+    "icon": "🖼️"
+  },
+  {
+    "id": 8,
+    "name": "Analytics Radar",
+    "description": "Track website conversions and live event loops in an intuitive dashboard.",
+    "price": 89,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Real-time map", "Privacy focused", "Slack alerts"],
+    "icon": "📈"
+  },
+  {
+    "id": 9,
+    "name": "FontVault Elite",
+    "description": "A curated directory of handpicked typographic options for digital designers.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "bestseller",
+    "features": ["Webfont hosting", "Desktop license", "OTF/TTF files"],
+    "icon": "🔤"
+  }
+]
