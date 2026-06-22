@@ -1,52 +1,71 @@
+import { useState } from 'react';
 
-const Navbar = ({ cartCount }) => {
+export default function Navbar({ cartCount = 0 }) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm pb-4">
-        <div className="navbar-start">
-          <a className="font-bold text-5xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] via-[#632FF7]_28% via-[#7525F8]_54% to-[#9514FA] py-2">
-            Digitools
-          </a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li><a className="font-bold bg-transparent">Products</a></li>
-            <li><a className="transition-all duration-200 hover:font-bold bg-transparent">Features</a></li>
-            <li><a className="transition-all duration-200 hover:font-bold bg-transparent">Price</a></li>
-            <li><a className="transition-all duration-200 hover:font-bold bg-transparent">Testimonials</a></li>
-            <li><a className="transition-all duration-200 hover:font-bold bg-transparent">FAQ</a></li>
-          </ul>
-        </div>
-        <div className="navbar-end flex items-center gap-3.5">
-          <div className="indicator">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
+    <nav className="w-full bg-white border-b border-gray-100 relative z-50">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+        
+       <span className="text-2xl font-black bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] bg-clip-text text-transparent tracking-tight">
+          DigiTools
+        </span>
+
+        <div className="hidden md:flex items-center gap-6">
+          <div className="relative p-2.5 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-[#101727]">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
             </svg>
             {cartCount > 0 && (
-              <span className="badge badge-sm indicator-item bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none font-bold">
+              <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-[11px] font-black w-5 h-5 rounded-full flex items-center justify-center">
+                {cartCount}
+              </span>
+            )}
+          </div>
+          <button className="bg-[#7625F8] hover:bg-[#632FF7] text-white font-bold py-3 px-6 rounded-2xl shadow-sm transition-all duration-200 active:scale-[0.98]">
+            Get Started
+          </button>
+        </div>
+
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="p-2 text-[#101727] hover:bg-gray-50 rounded-xl transition-colors focus:outline-none md:hidden"
+        >
+          {isOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          )}
+        </button>
+
+      </div>
+
+      <div className={`absolute top-20 left-0 w-full bg-white border-b border-gray-100 shadow-lg transition-all duration-300 ease-in-out md:hidden ${
+        isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'
+      }`}>
+        <div className="px-4 py-6 flex flex-col gap-5 items-center">
+          
+          <div className="relative p-2.5 bg-gray-50 rounded-full cursor-pointer hover:bg-gray-100 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-[#101727]">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>
+            {cartCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-[11px] font-black w-5 h-5 rounded-full flex items-center justify-center animate-pulse">
                 {cartCount}
               </span>
             )}
           </div>
 
-          <a className="btn border-none font-semibold px-4 py-2 rounded-[20px] bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white hover:opacity-90 min-h-0 h-auto">
-            Get Startedæ
-          </a>
+          <button className="w-full max-w-xs bg-[#7625F8] hover:bg-[#632FF7] text-white font-bold py-3 px-6 rounded-2xl shadow-sm transition-all duration-200 active:scale-[0.98]">
+            Get Started
+          </button>
+
         </div>
       </div>
-    </div>
+    </nav>
   );
-};
-
-export default Navbar;
+}

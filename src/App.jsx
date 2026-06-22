@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import Banner from './component/Banner/Banner';
+import Footer from './component/Footer/Footer';
 import GetStarted from './component/GetStarted/GetStarted';
 import Navbar from './component/Navbar/Navbar';
 import Pricing from './component/Pricing/Pricing';
@@ -38,6 +40,7 @@ export default function App() {
   return (
     <div>
       <Navbar cartCount={cartItems.length} />
+      <Banner></Banner>
       <State />
       <Product 
         cartItems={cartItems} 
@@ -46,6 +49,7 @@ export default function App() {
       />
       <GetStarted></GetStarted>
       <Pricing></Pricing>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );

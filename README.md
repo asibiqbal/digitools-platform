@@ -1,16 +1,39 @@
-# React + Vite
+# 🛠️ DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A curated collection of premium digital tools designed to boost productivity, simplify creators' workflows, and empower professionals with lightning-fast utilities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dynamic Cart Pipeline:** Seamlessly add products with responsive state changes, instantly calculate total billing amounts, and clear items securely upon checkout.
+- **Responsive Command Hub:** A fully fluid interface that renders a structured multi-device grid layout on desktop screens and shifts into an sleek interactive dropdown slide-out on mobile views.
+- **Animated Micro-Interactions:** Elegant interaction feedback built across product catalogs and flexible pricing configurations featuring card element elevation changes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - Component-driven declarative UI state architecture.
+- **Tailwind CSS** - Modern utility-first production styling framework.
+- **React Toastify** - Contextual asynchronous push notifications pipeline.
+
+---
+
+## 📦 Local Setup
+
+Get your local client development workspace running inside your environment:
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/your-username/digitools-project.git](https://github.com/your-username/digitools-project.git)
+
+# 2. Enter the workspace directory
+cd digitools-project
+
+# 3. Install core node dependencies
+npm install
+
+# 4. Spin up the local development engine
+npm run dev
+```
