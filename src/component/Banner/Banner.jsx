@@ -53,11 +53,11 @@ const Banner = () => {
         </p>
 
         <div className="flex flex-wrap items-center gap-4 mt-4">
-          <a className="btn border-none font-bold px-8 py-4 rounded-[20px] bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white hover:opacity-90 min-h-0 h-auto">
+          <a className="btn border-none font-bold px-6 py-3 rounded-[20px] bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white hover:opacity-90 min-h-0 h-auto">
             Explore Products
           </a>
 
-          <button className="btn min-h-0 h-auto font-bold px-8 py-4 rounded-[20px] border-2 bg-transparent border-[#7625F8] hover:bg-purple-50 flex items-center gap-2">
+          <button className="btn min-h-0 h-auto font-bold px-6 py-3 rounded-[20px] border-2 bg-transparent border-[#7625F8] hover:bg-purple-50 flex items-center gap-2">
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 
