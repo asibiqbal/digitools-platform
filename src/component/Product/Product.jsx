@@ -60,7 +60,10 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
               {productsData.map((data) => {
                 const isAdded = cartItems.includes(data.id);
                 return (
-                  <div key={data.id} className="relative flex flex-col justify-between bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <div 
+                    key={data.id} 
+                    className="relative flex flex-col justify-between bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-2"
+                  >
                     
                     <div className="flex items-start justify-between mb-4">
                       <span className="text-4xl">{data.icon}</span>
@@ -90,10 +93,10 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
 
                     <button
                       onClick={() => onToggleCart(data.id, data.name)}
-                      className={`w-full btn border-none font-bold px-6 py-3 rounded-[20px] min-h-0 h-auto transition-all duration-200 ${
+                      className={`w-full btn border-none font-bold px-6 py-3 rounded-[20px] min-h-0 h-auto transition-all duration-200 active:scale-[0.98] ${
                         isAdded
-                          ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                          : 'bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white hover:opacity-90'
+                          ? 'bg-gray-200 text-gray-700 hover:bg-gray-300 shadow-sm'
+                          : 'bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white hover:opacity-90 shadow-md'
                       }`}
                     >
                       {isAdded ? 'Added To Cart' : 'Buy Now'}
@@ -106,7 +109,7 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
 
           ) : (
             
-            <div className="w-full bg-white border border-gray-100 rounded-3xl p-8 shadow-sm min-h-87.5 flex flex-col justify-between">
+            <div className="w-full bg-white border border-gray-100 rounded-3xl p-8 shadow-sm min-h-[350px] flex flex-col justify-between transition-all duration-300 ease-in-out hover:shadow-xl">
               
               <div className="text-left w-full pb-4">
                 <h6 className="text-2xl font-extrabold text-[#101727]">Your Cart</h6>
@@ -129,7 +132,7 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
                   <div className="space-y-6 w-full">
                     <div className="space-y-4">
                       {selectedProducts.map((item) => (
-                        <div key={item.id} className="flex items-center justify-between bg-slate-50/60 rounded-2xl p-4 border border-gray-50">
+                        <div key={item.id} className="flex items-center justify-between bg-slate-50/60 rounded-2xl p-4 border border-gray-50 transition-all duration-200 hover:bg-slate-50 hover:shadow-xs">
                           <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-2xl">
                               {item.icon}
@@ -158,7 +161,7 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
                     <div className="pt-2">
                       <button
                         onClick={onClearCart}
-                        className="w-full py-4 text-center text-white bg-[#8B2CFA] hover:bg-[#7625F8] active:scale-[0.99] transition-all duration-200 font-bold rounded-2xl shadow-sm tracking-wide"
+                        className="w-full py-4 text-center text-white bg-[#8B2CFA] hover:bg-[#7625F8] active:scale-[0.99] transition-all duration-200 font-bold rounded-2xl shadow-md tracking-wide"
                       >
                         Proceed To Checkout
                       </button>

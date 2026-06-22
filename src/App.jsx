@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import GetStarted from './component/GetStarted/GetStarted';
 import Navbar from './component/Navbar/Navbar';
+import Pricing from './component/Pricing/Pricing';
 import Product from './component/Product/Product';
 import State from './component/State/State';
 
@@ -44,6 +45,7 @@ export default function App() {
         onClearCart={handleClearCart}
       />
       <GetStarted></GetStarted>
+      <Pricing></Pricing>
       <ToastContainer />
     </div>
   );
