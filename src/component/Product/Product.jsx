@@ -29,13 +29,13 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
           </p>
         </div>
 
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex items-center gap-4 mt-4 bg-white p-1 border border-gray-100 rounded-2xl shadow-xs">
           <button
             onClick={() => setActiveTab('product')}
-            className={`btn font-bold px-8 py-4 rounded-[20px] min-h-0 h-auto transition-all duration-300 border ${
+            className={`btn font-bold px-6 py-2 rounded-[14px] min-h-0 h-auto transition-all duration-300 border ${
               activeTab === 'product'
                 ? 'bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white border-transparent shadow-md'
-                : 'bg-white text-black border-gray-300 hover:bg-gray-50'
+                : 'bg-white text-black border-transparent hover:bg-gray-50'
             }`}
           >
             Product
@@ -43,10 +43,10 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
 
           <button
             onClick={() => setActiveTab('cart')}
-            className={`btn font-bold px-8 py-4 rounded-[20px] min-h-0 h-auto transition-all duration-300 border ${
+            className={`btn font-bold px-6 py-2 rounded-[14px] min-h-0 h-auto transition-all duration-300 border ${
               activeTab === 'cart'
                 ? 'bg-linear-to-r from-[#4F39F6] via-[#7625F8] to-[#9514FA] text-white border-transparent shadow-md'
-                : 'bg-white text-black border-gray-300 hover:bg-gray-50'
+                : 'bg-white text-black border-transparent hover:bg-gray-50'
             }`}
           >
             Cart {cartItems.length > 0 && `(${cartItems.length})`}
@@ -109,7 +109,7 @@ export default function Product({ cartItems = [], onToggleCart, onClearCart }) {
 
           ) : (
             
-            <div className="w-full bg-white border border-gray-100 rounded-3xl p-8 shadow-sm min-h-[350px] flex flex-col justify-between transition-all duration-300 ease-in-out hover:shadow-xl">
+            <div className="w-full bg-white border border-gray-100 rounded-3xl p-8 shadow-sm min-h-87.5 flex flex-col justify-between transition-all duration-300 ease-in-out hover:shadow-xl">
               
               <div className="text-left w-full pb-4">
                 <h6 className="text-2xl font-extrabold text-[#101727]">Your Cart</h6>

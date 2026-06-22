@@ -1,4 +1,3 @@
-
 const State = () => {
     return (
         <div>
@@ -8,30 +7,30 @@ const State = () => {
     {/* Left Column */}
     <div className="flex flex-col items-center justify-center md:border-r border-white/20 last:border-none py-4">
       <h4 className="text-[60px] font-extrabold text-white capitalize leading-none mb-3">
-        50k+
+        12M+
       </h4>
       <p className="text-[24px] font-light text-white">
-        Active Users
+        Downloads
       </p>
     </div>
 
     {/* Middle Column */}
     <div className="flex flex-col items-center justify-center md:border-r border-white/20 last:border-none py-4">
       <h4 className="text-[60px] font-extrabold text-white capitalize leading-none mb-3">
-        200+
+        85+
       </h4>
       <p className="text-[24px] font-light text-white">
-        Premium Tools
+        Pro Templates
       </p>
     </div>
 
     {/* Right Column */}
     <div className="flex flex-col items-center justify-center md:border-r border-white/20 last:border-none py-4">
       <h4 className="text-[60px] font-extrabold text-white capitalize leading-none mb-3">
-        4.9
+        99.9%
       </h4>
       <p className="text-[24px] font-light text-white">
-        Rating
+        Server Uptime
       </p>
     </div>
 

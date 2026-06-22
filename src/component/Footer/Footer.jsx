@@ -1,4 +1,3 @@
-
 export default function Footer() {
   return (
     <footer className="w-full bg-[#101727] text-white pt-24 pb-8 border-t border-gray-800/20">
@@ -8,44 +7,44 @@ export default function Footer() {
           <div className="md:col-span-4">
             <h3 className="text-3xl font-black tracking-tight mb-4">DigiTools</h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
+              Modular UI components and production-ready layout systems engineered for modern application developers. Build interface layers in minutes.
             </p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:col-span-6 gap-8">
             <div>
-              <h4 className="font-bold text-base mb-4">Product</h4>
+              <h4 className="font-bold text-base mb-4">Ecosystem</h4>
               <ul className="space-y-3 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Templates</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">UI Library</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Licensing</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Layout Blocks</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-base mb-4">Company</h4>
+              <h4 className="font-bold text-base mb-4">Platform</h4>
               <ul className="space-y-3 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Press</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Core Architecture</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Changelog</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Engineering</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Updates</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-base mb-4">Resources</h4>
+              <h4 className="font-bold text-base mb-4">Support</h4>
               <ul className="space-y-3 text-sm text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Code Specs</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Dev Community</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Contact Stack</a></li>
               </ul>
             </div>
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="font-bold text-base mb-4">Social Links</h4>
+            <h4 className="font-bold text-base mb-4">Channels</h4>
             <div className="flex items-center gap-3">
               <a href="#" className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#101727] transition-transform hover:scale-110">
                 <svg className="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
@@ -67,11 +66,11 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
-          <span>© 2026 Digitools. All rights reserved.</span>
+          <span>© 2026 DigiTools Ecosystem. All rights reserved.</span>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
+            <a href="#" className="hover:text-white transition-colors">Privacy Infrastructure</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Compliance</a>
+            <a href="#" className="hover:text-white transition-colors">Cookie Policies</a>
           </div>
         </div>
 

@@ -1,50 +1,49 @@
-
 export default function Pricing() {
   const plans = [
     {
-      name: 'Starter',
-      tagline: 'Perfect for getting started',
+      name: 'Lite License',
+      tagline: 'Ideal for personal & staging setups',
       price: '$0',
-      period: '/Month',
+      period: '/Forever',
       features: [
-        'Access to 10 free tools',
-        'Basic templates',
-        'Community support',
-        '1 project per month'
+        'Access to 15 base blocks',
+        'Standard layout configuration',
+        'Community patch documentation',
+        '1 active local domain slot'
       ],
-      buttonText: 'Get Started Free',
+      buttonText: 'Claim Free Access',
       isPopular: false
     },
     {
-      name: 'Pro',
-      tagline: 'Best for professionals',
+      name: 'Production Pro',
+      tagline: 'Tailored for active app developers',
       price: '$29',
       period: '/Month',
       features: [
-        'Access to all premium tools',
-        'Unlimited templates',
-        'Priority support',
-        'Unlimited projects',
-        'Cloud sync',
-        'Advanced analytics'
+        'Unlocks full component catalog',
+        'Uncapped commercial workflows',
+        'Direct stack support channel',
+        'Unlimited live domain pipelines',
+        'Private repository configuration',
+        'Automated updates workflow'
       ],
-      buttonText: 'Start Pro Trial',
+      buttonText: 'Initialize Pro Workspace',
       isPopular: true
     },
     {
-      name: 'Enterprise',
-      tagline: 'For teams and businesses',
+      name: 'Agency Hub',
+      tagline: 'Built for scale and fast-paced teams',
       price: '$99',
       period: '/Month',
       features: [
-        'Everything in Pro',
-        'Team collaboration',
-        'Custom integrations',
-        'Dedicated support',
-        'SLA guarantee',
-        'Custom branding'
+        'Everything included in Pro tier',
+        'Shared design system pipeline',
+        'Custom template integration',
+        'Dedicated deployment architect',
+        'Priority uptime guarantees',
+        'White-labeled code boilerplate'
       ],
-      buttonText: 'Contact Sales',
+      buttonText: 'Provision Team Seats',
       isPopular: false
     }
   ];
@@ -55,10 +54,10 @@ export default function Pricing() {
         
         <div className="text-center max-w-2xl mx-auto mb-20">
           <h2 className="text-3xl md:text-5xl font-black text-[#101727] tracking-tight">
-            Simple, Transparent Pricing
+            Flexible Licensing Options
           </h2>
           <p className="text-[#627382] text-base font-normal mt-4">
-            Choose the plan that fits your needs. Upgrade or downgrade anytime.
+            Select the tier that matches your deployment scope. Seamlessly scale configurations as your applications expand.
           </p>
         </div>
 
@@ -74,7 +73,7 @@ export default function Pricing() {
             >
               {plan.isPopular && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FEF3C7] text-[#D97706] text-xs font-bold px-4 py-1 rounded-full shadow-xs border border-[#FDE68A]">
-                  Most Popular
+                  Recommended Tier
                 </div>
               )}
 
